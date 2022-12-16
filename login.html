@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="bootstrap/bootstrap.min.css" rel="bootstrap" />
+        <link href="fontawesome/all.min.css" rel="stylesheet" />
+        <link href="./stylesheets/login.css" rel="stylesheet" />
+        <link href="./stylesheets/index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo-img" src="./open-book.png">
+                </a>
+            </div>
+            <div class="links">
+                <ul class="nav justify-content-center bg-dark">
+                    <li class="nav-item">
+                        <a href="./index.html">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="#">Shop</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="./cart.html">
+                <ion-icon name="cart-outline">
+            </a>
+        </header> -->
+        <div class="container">
+            <div class="form">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="signBtn" onclick="login()">Log In</button>
+                    <button type="button" class="signBtn" onclick="Register()">Registration</button>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.facebook.com/login/" target="_blank">
+                        <ion-icon class="icon" id="faceBook" name="logo-facebook"></ion-icon>
+                    </a>
+                    <a
+                        href="https://accounts.google.com/v3/signin/identifier?dsh=S-1995918687%3A1671123579776824&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh73RGloCiexEa-YLv151M9UZAEzz9y4i6WqqpaladD7_kQqb1ajbgRaDZLOUw3rO-ie5dfrLw"
+                        target="_blank"
+                    >
+                        <ion-icon class="icon" name="logo-google"></ion-icon>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank">
+                        <ion-icon class="icon" name="logo-twitter"></ion-icon>
+                    </a>
+                </div>
+
+                <form id="login" class="input-group">
+                    <input type="text" id="loginUserId" class="input-field" placeholder="User Id" required />
+                    <input
+                        type="password"
+                        id="loginPass"
+                        class="input-field"
+                        placeholder="Enter Password"
+                        required
+                    />
+                    <input type="checkbox" class="checkbox" /><span>Remember Password</span>
+                    <button type="submit" class="submit-btn" id="login-btn">Log in</button>
+                </form>
+
+                <form id="Register" class="input-group">
+                    <input
+                        type="text"
+                        id="registerUserId"
+                        class="input-field"
+                        placeholder="User Id"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="registerMail"
+                        class="input-field"
+                        placeholder="Email Id"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="registerPass"
+                        class="input-field"
+                        placeholder="Enter password"
+                        required
+                    />
+                    <input type="checkbox" class="checkbox" /><span>I agree with terms & conditions</span>
+                    <button type="submit" class="submit-btn" id="register-btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./javascript/pro.js"></script>
+    </body>
+</html>
